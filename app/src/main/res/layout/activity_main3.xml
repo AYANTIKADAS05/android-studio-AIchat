@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:background="#D9E2E3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="#9EADAE">
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ritama Roy"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science Final Year Student at Maulana Abul Kalam Azad University of Technology, West Bengal formerly WBUT"
+                    android:textSize="17sp"
+                    android:textColor="#222222"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maulana Abul Kalam Azad University of Technology, West Bengal formerly WBUT"
+                    android:textSize="16sp"
+                    android:textColor="#777777"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kolkata, West Bengal, India  •  1 connection"
+                    android:textSize="15sp"
+                    android:textColor="#777777"
+                    android:layout_marginBottom="18dp"/>
+
+
+                <!-- Buttons -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="55dp"
+                        android:text="Connect"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#0876C9"/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="55dp"
+                        android:text="Message"
+                        android:textSize="16sp"
+                        android:textColor="#0876C9"
+                        android:backgroundTint="#FFFFFF"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Divider -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EEEEEE"/>
+
+
+            <!-- Education -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="253dp"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:layout_marginBottom="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maulana Abul Kalam Azad University of Technology, West Bengal formerly WBUT"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science"
+                    android:textSize="17sp"
+                    android:textColor="#555555"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023 - Present"
+                    android:textSize="16sp"
+                    android:textColor="#777777"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+
+            <!-- Divider -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EEEEEE"/>
+
+
+            <!-- Skills -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:layout_marginBottom="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Java  •  Python (Programming Language)"
+                    android:textSize="17sp"
+                    android:textColor="#333333"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Bottom Navigation -->
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <!-- Home -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌂"
+                android:textSize="30sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+
+        <!-- My Network -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚲"
+                android:textSize="25sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Network"
+                android:textSize="12sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+
+        <!-- Post -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textSize="12sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+
+        <!-- Notifications -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♧"
+                android:textSize="28sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textSize="12sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+
+        <!-- Jobs -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▣"
+                android:textSize="25sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jobs"
+                android:textSize="12sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
