@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <!-- Top Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨ My AI Chat"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#4A3025"
+        android:padding="18dp"/>
+
+
+    <!-- Chat Messages Area -->
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- AI First Message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! 👋&#10;How can I help you?"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- Bottom Chat Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <!-- Message Input -->
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ask me anything..."
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:background="#F0F0F0"/>
+
+
+        <!-- Microphone -->
+        <Button
+            android:id="@+id/micButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:text="🎤"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"/>
+
+
+        <!-- Send -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:text="➤"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
